@@ -1,86 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
-    <!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<!-- google font CDN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
-    <style>
-        font-adlam {
-            font-family: "ADLaM Display", serif;
-        }
-    </style>
+
+  <!--DaisyUI CDN  -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .font-adlam {
+    font-family: "ADLaM Display", serif;
+  }
+  @media screen and (max-width:576px) {
+    .menubar,
+    .btn-title,
+    .ico-pnj,
+    .browse {
+      display: none;
+
+    }
+    .header{
+      border-bottom: 2px solid gray;
+    }
+
+  }
+</style>
+
 </head>
 <body class="font-adlam">
-    <!-- Header Section -->
-     <header>
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
-                </div>
-              </div>
-        </nav>
-     </header>
-     
-     <!-- main Section -->
-      <main>
+  <!-- header section -->
+   <header class="header md:container mx-auto bg-[#FFF9F4]">
+    <nav >
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="menubar btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class=" menu menu-sm hidden dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+              <li><a>Item 1</a></li>
+         
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <img class="px-5" src="Assignment_03_Category_0001/c1-assets/logo-header.png" alt="">
+          <a class="browse btn btn-ghost text-xl">Browse4Pets</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Find a pet</a></li>
+            
+            <li><a>Breeds</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-5">
+       <div class="ico-pnj md:flex">
+     <div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+      </svg>
+     </div>
+        
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+      </div>
+       </div>
+          
+         <div class="btn-title">
+          <a class="btn border-yellow-300">Login</a>
+          <a class="btn bg-yellow-500">Register</a>
+         </div>
+         <div class="lg:hidden px-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
 
-      </main>
+          fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>
+         </div>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- banner section  -->
+    <div class="relative hero bg-white min-h-screen">
+      <div class="main lg:flex justify-center">
+<!-- text contain -->
+        <div class="absolute  mt-20 left-8">
+          <h1 class="text-5xl font-bold">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+          <p class="py-6">
+            Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="btn btn-primary">Find a pet</button>
+          
+        </div>
+        <!-- img contain -->
+        <div class="img cot mb-32 ">
+          <img src="Assignment_03_Category_0001/c1-assets/cat-big.png" alt="">
+        </div>
+      </div>
+    </div>
+   </header>
+   
+   <!-- main section -->
+    <main>
 
-      <!-- Footer Section -->
-       <footer>
+    </main>
+    <!-- footer section -->
+     <footer>
 
-       </footer>
+     </footer>
 </body>
 </html>
