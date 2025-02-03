@@ -27,7 +27,7 @@
 
     }
     .header{
-      border-bottom: 2px solid gray;
+      
     }
     .card-img{
         width: auto;
@@ -129,16 +129,16 @@
    </header>
    
    <!-- main section -->
-    <main class="md:container mx-auto">
+    <main class="md:container mx-auto px-3">
       <!-- browse section start -->
       <section class="">
         <div class="text-3xl ">
           <h4>Browse By Categories</h4> 
         </div>
         <!-- img section -->
-        <div class=" card-img lg:flex gap-8 mt-10 grid grid-cols-1    ">
+        <div class=" card-img lg:flex gap-8 mt-10 grid grid-cols-2    ">
           <!-- card-1 -->
-          <div class=" card-img card bg-base-100 w-96 shadow-xl bg-[#F9DF8A] ">
+          <div class=" card-img card bg-base-100 lg:w-96 shadow-xl bg-[#F9DF8A] ">
             <figure class=" px-10 pt-10 ">
               <img class="bg-white p-4 rounded-full" src="Assignment_03_Category_0001/c1-assets/dog-cartoon.png" alt="">
               </figure>
@@ -148,7 +148,7 @@
            </div> 
          </div>  
           <!-- card-2 -->
-          <div class="card-img card bg-base-100 w-96 shadow-xl bg-[#F9DF8A] ">
+          <div class="card-img card bg-base-100 lg:w-96 shadow-xl bg-[#F9DF8A] ">
             <figure class=" px-10 pt-10 ">
               <img class="bg-white p-4 rounded-full" src="Assignment_03_Category_0001/c1-assets/fish-cartoon.png" alt="">
               </figure>
@@ -158,7 +158,7 @@
            </div> 
          </div>  
           <!-- card-3 -->
-          <div class="card-img card bg-base-100 w-96 shadow-xl bg-[#F9DF8A] ">
+          <div class="card-img card bg-base-100 lg:w-96 shadow-xl bg-[#F9DF8A] ">
             <figure class=" px-10 pt-10 ">
               <img class="bg-white p-4 rounded-full" src="Assignment_03_Category_0001/c1-assets/cat-cartoon.png" alt="">
               </figure>
@@ -168,7 +168,7 @@
            </div> 
          </div>  
           <!-- card-4 -->
-          <div class="card-img card bg-base-100 w-96 shadow-xl bg-[#F9DF8A] ">
+          <div class="card-img card bg-base-100 lg:w-96 shadow-xl bg-[#F9DF8A] ">
             <figure class=" px-10 pt-10 ">
               <img class="bg-white p-4 rounded-full" src="Assignment_03_Category_0001/c1-assets/bird-cartoon.png" alt="">
               </figure>
@@ -178,7 +178,7 @@
            </div> 
          </div>  
           <!-- card-5 -->
-          <div class="card-img card bg-base-100 w-96 shadow-xl bg-[#F9DF8A] ">
+          <div class="card-img card bg-base-100 lg:w-96 shadow-xl bg-[#F9DF8A] ">
             <figure class=" px-10 pt-10 ">
               <img class="bg-white p-4 rounded-full" src="Assignment_03_Category_0001/c1-assets/mouse-cartoon.png" alt="">
               </figure>
@@ -188,7 +188,7 @@
            </div> 
          </div>  
           <!-- card-6 -->
-          <div class="card-img card bg-base-100 w-96 shadow-xl bg-[#F9DF8A] ">
+          <div class="card-img card bg-base-100 lg:w-96 shadow-xl bg-[#F9DF8A] ">
             <figure class=" px-10 pt-10 ">
               <img class="bg-white p-4 rounded-full" src="Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png" alt="">
               </figure>
@@ -324,12 +324,13 @@
           </div>
       </section>
       <section>
-        <div class="text-3xl mt-20">
+        <div class="text-3xl mt-20 mx-10">
           <h4>Everyday low Price</h4>
         </div>
-       <div class="flex mt-20">
-        
-        <div class=" bg-[#F9DF8A] mx-auto md:mx-8 rounded-xl h-[400px] w-96">
+      
+       <div class="lg:flex mt-10 space-y-5">
+          <!-- dog-card-1 -->
+        <div class=" bg-gradient-to-r from-[#F8CCFB] to-[#DBCEFC] mx-auto md:mx-8 rounded-xl md:h-[400px] md:w-[800px]">
           <div class="card-body ">
             <p>Under Price</p>
             <h2 class="card-title text-black font-bold text-2xl">Pet Grooming Mitt</h2>
@@ -341,7 +342,8 @@
             </div>
           </div>
       </div>
-          <div class=" bg-[#F9DF8A] mx-auto md:mx-8 rounded-xl h-[400px] w-96">
+      <!-- dog-card-2 -->
+          <div class=" bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] mx-auto md:mx-8 rounded-xl md:h-[400px] md:w-[500px]">
             <div class="card-body ">
               <h2 class="card-title text-black font-bold text-2xl">T-Shirt for Dogs</h2>
               <h1 class="text-5xl font-bold">$7.99</h1>
@@ -357,6 +359,7 @@
     <!-- footer section -->
      <footer class="">
       <section>
+        <!-- dog-card-scetion -->
         <div class="hero bg-[#FFF9F4] min-h-screen mt-80 ">
           <div class="hero-content flex-col lg:flex-row">
             <img
