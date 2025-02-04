@@ -22,7 +22,7 @@
     .menubar,
     .btn-title,
     .ico-pnj,
-    .browse {
+    .browse, {
       display: none;
 
     }
@@ -32,13 +32,20 @@
     .card-img{
         width: auto;
       }
-      .card-banner{
-        
-      }
+   
       .footer{
         height: 500px;
         
       }
+      .text-banner{
+        padding-left: 30px;
+      }
+  
+      .img-banner-1{
+        width: 150px;
+      }
+     
+  
    }
   
 </style>
@@ -319,7 +326,7 @@
                   </div>
                 </div>
                 <!-- card-9 -->
-                <div class=" card-hide mx-auto w-[200px] items-center flex  shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                <div class="card-hide  mx-auto w-[200px] items-center flex  shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
                   <div><img class="bg-img rounded-lg" src="Assignment_03_Category_0001/c1-assets/rabbit-cartoon.png" alt=""></div>
                   <!-- text -->
                   <div>
@@ -354,7 +361,7 @@
           <div class=" bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] mx-auto md:mx-8 rounded-xl md:h-[400px] md:w-[500px]">
             <div class="card-body ">
               <h2 class="card-title text-black font-bold text-2xl">T-Shirt for Dogs</h2>
-              <h1 class="text-5xl font-bold">$7.99</h1>
+              <h1 class="text-5xl font-bold text-yellow-300">$7.99</h1>
             
               <div class="card-actions  justify-end">
                <img class="h-60 -mt-6" src="Assignment_03_Category_0001/c1-assets/cute-pet-small.png" alt="">
@@ -373,30 +380,32 @@
            <div class="h-[200] w-[300px] lg:h-[400px]  card-banner mx-9  lg:flex justify-center  gap-x-20
             bg-gradient-to-r from-[#C4C4C4] to-[#FFFFFF] lg:w-[1000px] lg:mx-auto rounded-xl  ">
             <!-- image -->
-            <div class="img-banner-1 h-[100px] md:h-[200px]">
+            <div class=" img-banner-1 h-[100px]  md:h-[200px] mx-auto ">
               <img src="Assignment_03_Category_0001/c1-assets/cute-pet-mid.png" alt="">
             </div>
             <!-- text -->
-             <div class=" text-banner mt-20 space-y-5 mx-auto ">
+             <div class=" text-banner mt-20 space-y-3 md:space-y-5 mx-auto ">
                  <h1 class=" banner-title text-3xl text-black font-bold">Get Pawsome News!</h1>
                  <p>Exclusive training tips, ticks, product deals and more.</p>
                  <div>
                   <input class="h-12 text-white w-3/4 px-3 rounded-md" placeholder="Enter email" type="text">
                  </div>
-                 <button class=" btn-type h-9 w-28 text-black bg-yellow-300 rounded-lg">Subscribe</button>
+                <div class="mx-12  -mt-20 lg:mb-0 lg:mx-0">
+                  <button class=" btn-type h-9 w-28 text-black bg-yellow-300 rounded-lg">Subscribe</button>
+                </div>
              </div>
            </div>  
         </section>
   
         <!--  footer section start -->
          <section>
-          <section class=" footer mx-auto bg-[#FFDC26] bg-base-200 h-[800px]  lg:h-[500px] text-base-content  p-10 min-h-screen-xl">
+          <section class=" footer mx-auto bg-[#FFDC26] bg-base-200 h-[800px]  lg:h-[600px] text-base-content  p-10 min-h-screen-xl">
             <aside class="mt-32 md:mt-0  ">
             <div class="flex text-3xl  text-black mt-28 md:mt-20 ">
-              <div class=" nature-image mt-5  md:pt-40">
+              <div class=" nature-image   mt-10  md:pt-40">
                 <img  src="Assignment_03_Category_0001/c1-assets/logo-footer.png" alt="">
               </div> 
-                 <div class="nature md:pt-40 lg:mt-8 mx-5 ">
+                 <div class="nature mt-10 md:pt-40 lg:mt-8 mx-5 ">
                     <h1>Browse4Pets</h1>
                  </div>
               </div>
@@ -405,12 +414,12 @@
                  for your furry <br> friends
               </p>
             </aside>
-            <nav class="text-black md:my-20 md:space-y-5 md:pt-40 ">
+            <div class="text-black md:my-20 md:space-y-5 md:pt-40 lg:mt-40">
               <a class="link link-hover">Find a pet</a>
               <a class="link link-hover">breeds</a>
              <a class="link link-hover">contact us</a>    
-            </nav>
-            <nav class="md:my-20 lg:pt-60">
+            </div>
+            <nav class="md:my-20 lg:pt-60 ">
               <p class="text-black">Follow us</p>
              <div class="space-x-3">
               <div class="grid grid-flow-col gap-4">
